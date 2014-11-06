@@ -32,7 +32,7 @@ class API::V1::TodosController < ApplicationController
 
   private
 
-  def todos_param
+  def todo_params
    params.permit(:title, :order, :completed)
   end
 
